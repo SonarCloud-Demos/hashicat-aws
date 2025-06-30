@@ -201,21 +201,3 @@ resource "aws_key_pair" "hashicat" {
 resource "aws_dms_replication_instance" "example" {
   publicly_accessible = true # Sensitive
 }
-
-resource "aws_iam_policy" "example" {
-  name = "example"
-  policy =<<EOF
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "lambda:UpdateFunctionCode"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-EOF
-}
