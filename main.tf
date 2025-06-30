@@ -200,5 +200,4 @@ resource "aws_key_pair" "hashicat" {
 
 resource "aws_dms_replication_instance" "example" {
   publicly_accessible = true # Sensitive
-
 }
